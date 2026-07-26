@@ -1,7 +1,30 @@
 aid: finda
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/finda.png
 name: Finda
-description: Finda is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Finda (핀다) is a South Korean fintech company founded in 2015 and headquartered
+  in Seoul that operates a licensed online loan-comparison and financial-product
+  marketplace. Through its mobile app and website, Finda lets consumers compare
+  loan products from 76+ financial institutions and 400+ products in about a
+  minute, refinance existing loans ("갈아타기"), aggregate accounts and cards for
+  asset management, run financial calculators (interest, DSR, year-end tax,
+  mortgage eligibility), and monitor and manage their credit. Registered as a
+  loan-brokerage/loan-collection corporation under Korea's Financial Services
+  Act, Finda earns commissions from partner financial institutions rather than
+  charging consumers. It reports 3.47M+ cumulative members and 256T+ won in
+  managed loan assets, and is backed by 500 Global. Finda is a consumer B2C
+  platform and does not publish a public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/finda/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Financial Services
+- Loans
+- Lending
+- Loan Comparison
+- Personal Finance
+- Credit
+- South Korea
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/finda-domain-security.yml
 - type: Website
   url: https://finda.co.kr
+- type: About
+  url: https://finda.co.kr/about-us
+- type: Careers
+  url: https://finda.co.kr/culture
+- type: Support
+  url: https://finda.co.kr/voc
+- type: TermsOfService
+  url: https://finda.co.kr/agreement/service/terms
+- type: PrivacyPolicy
+  url: https://finda.co.kr/terms/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

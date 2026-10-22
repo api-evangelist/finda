@@ -31,3 +31,34 @@
     year: '2015'
   status: not-a-workflow
   arazzo: null
+- slug: finda-korea-mydata-licensed-operators-mydata-support-center-participants
+  label: Korea MyData licensed operators (MyData Support Center participants)
+  partner_name: Korea MyData licensed operators (MyData Support Center participants)
+  category: Korean MyData operator licence (본인신용정보관리업, Credit Information Use and Protection Act)
+  type: register
+  channel: regulator-register
+  evidence: https://www.mydatacenter.or.kr:3441/myd/intro/sub3.do
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Korea MyData licensed operators (MyData Support Center participants)
+    spec_file: null
+    standard: null
+    role: licensed-participant
+    registrations:
+    - registered_name: FINDA
+      register_country: KR
+      matched_domain: finda.co.kr
+      matched_by: domain
+      register_website: https://finda.co.kr
+      register_sector: fintech
+    signal_note: 'participation only: listed by the MyData Support Center (Korea Credit Information Services, for
+      the FSC); no conformance certification is published'
+    detected_by: sweep-korea-mydata-operators.py
+    detected: '2026-10-22'
+    signals:
+    - signal: rate-cut-request-service-participant
+      source: https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/076e7a70-9d5c-4bad-9ee5-2bcb5153b6ed/35/bbsctt.do
+      as_of: '2026-08-18'
+  status: not-a-workflow
+  arazzo: null
